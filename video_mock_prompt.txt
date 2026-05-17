@@ -1,0 +1,69 @@
+You are a professional product video director. I am providing you with a 
+final branded mockup image. Your job is to generate a smooth, cinematic 
+product showcase video based on this image.
+
+ANALYZE THE PROVIDED IMAGE AND IDENTIFY:
+- The product type (packaging, t-shirt, social media post, bottle, box, etc.)
+- The brand colors, logo placement, typography style
+- The overall mood (luxury, minimal, bold, playful, corporate, etc.)
+- The background style and lighting in the mockup
+
+RECONSTRUCT THE UNBRANDED VERSION:
+Based on the final mockup, imagine what the product looked like before 
+the branding was applied (plain/blank version). The video must start 
+from that clean unbranded state and transition into the final branded 
+mockup exactly as shown in the image — same angle, same lighting, 
+same environment.
+
+VIDEO STRUCTURE (total duration: 8-12 seconds):
+
+[0s - 2s] INTRO SHOT
+Start with the blank/unbranded version of the product in the same 
+environment as the mockup. Slow cinematic push-in camera movement. 
+Soft ambient lighting matching the mockup's color palette.
+
+[2s - 5s] BRAND REVEAL
+The logo and design elements fade/slide/materialize onto the product 
+surface naturally — as if being applied in real time. Match the exact 
+position, size, and color of the branding shown in the mockup image. 
+The reveal animation should feel premium, not cheap. No flash or 
+sudden cuts.
+
+[5s - 9s] SHOWCASE ROTATION
+Gently rotate or orbit the product 30-45 degrees left and right to 
+show depth and dimension. Maintain consistent lighting throughout. 
+Add a subtle parallax or floating effect to give life to the product.
+
+[9s - 12s] FINAL HOLD
+Return to the exact angle shown in the mockup image. Hold for 2-3 
+seconds. Soft bokeh background. Brand colors subtly reflected in 
+the environment. Fade to clean.
+
+UNIVERSAL STYLE RULES (apply to all products):
+- Camera: slow, smooth, stabilized — no shaky movement
+- Lighting: match the lighting style visible in the mockup (soft 
+  studio = soft video light, outdoor = natural light, dark moody = 
+  low key dramatic lighting)
+- Color grade: pull colors from the brand palette in the mockup 
+  and apply a subtle color grade matching that palette
+- Sound: no voiceover needed, background score should match the 
+  brand mood detected from the mockup
+- Resolution: 4K, 24fps for cinematic feel
+- No text overlays unless text is already part of the mockup design
+
+PRODUCT-SPECIFIC BEHAVIOR:
+- If product is PACKAGING (box, bottle, can): show it on a flat 
+  surface, 3/4 angle, rotating slowly
+- If product is APPAREL (t-shirt, hoodie, cap): show it on a 
+  ghost mannequin or flat lay, zoom into the logo detail mid-video
+- If product is SOCIAL MEDIA POST/DIGITAL: show it on a device 
+  screen (phone/laptop), animate a scroll or swipe gesture
+- If product is STATIONERY (business card, letterhead): show it 
+  on a desk surface with soft shadows, slight tilt movement
+- If product is a BANNER/SIGNAGE: show it in a real environment 
+  (wall, storefront), camera slowly pulls back to reveal full context
+
+MOST IMPORTANT RULE:
+The final frame of the video must look identical to the mockup image 
+provided — same angle, same lighting, same branding position. The 
+video is simply the cinematic journey to arrive at that exact image.
