@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <header className="w-full bg-foreground/5">
           <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-3 text-sm md:px-10">
-            <Link href="/" className="font-semibold text-foreground">
+            <Link href="/" className="font-semibold text-foreground text-xl">
               Mockify
             </Link>
             <span className="inline-flex items-center rounded-full border border-foreground/20 bg-foreground/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-foreground/80">
@@ -44,7 +44,7 @@ export default function RootLayout({
 
         <footer className="mt-auto w-full bg-foreground/5">
           <div className="mx-auto flex w-full max-w-5xl flex-col items-start justify-between gap-3 px-6 py-4 text-sm text-foreground/70 md:flex-row md:items-center md:px-10">
-            <span className="font-medium text-foreground">Mockify</span>
+            <span className="font-medium text-foreground">Mockify · Built by Tezsid Designs Pvt Ltd.</span>
             <div className="flex items-center gap-4">
               <Link
                 href="/disclaimer"

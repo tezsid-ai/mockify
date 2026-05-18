@@ -1,7 +1,7 @@
 import { LegalPageLayout } from "@/components/LegalPageLayout";
 
 const LAST_UPDATED = "Last updated: 05-05-2026";
-const CONTACT_EMAIL = "[CONTACT EMAIL PLACEHOLDER]";
+const CONTACT_EMAIL = "info@tezsid.com";
 
 export default function DisclaimerPage() {
   return (

@@ -8,7 +8,7 @@ interface LegalPageLayoutProps {
   showBack?: boolean;
 }
 
-const CONTACT_EMAIL = "[CONTACT EMAIL PLACEHOLDER]";
+const CONTACT_EMAIL = "info@tezsid.com";
 
 export function LegalPageLayout({
   title,
@@ -19,7 +19,7 @@ export function LegalPageLayout({
 }: LegalPageLayoutProps) {
   return (
     <main className="flex-1">
-      <section className="bg-foreground/5">
+      <section className="">
         <div className="mx-auto max-w-4xl px-6 py-6">
           {showBack ? (
             <a
@@ -43,7 +43,7 @@ export function LegalPageLayout({
         <div className="space-y-4">{children}</div>
       </section>
 
-      <section className="bg-foreground/5">
+      <section className="">
         <div className="mx-auto max-w-4xl px-6 py-6 text-center">
           <p className="text-base font-medium text-foreground">
             Have questions? We&#39;re here to help.
