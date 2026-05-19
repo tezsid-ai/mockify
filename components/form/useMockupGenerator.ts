@@ -102,8 +102,7 @@ export function useMockupGenerator() {
     setGenerationCount(nextGenerationCount);
   }
 
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  async function startGeneration() {
     if (!isFormValid || !productImageFile) return;
     setSubmitError("");
     setIsSubmitting(true);
@@ -116,6 +115,11 @@ export function useMockupGenerator() {
     } finally {
       setIsSubmitting(false);
     }
+  }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    await startGeneration();
   }
 
   async function handleGenerateMore() {
@@ -165,6 +169,7 @@ export function useMockupGenerator() {
     handleProductImageChange,
     handleReset,
     handleSubmit,
+    startGeneration,
     handleGenerateMore,
   };
 }

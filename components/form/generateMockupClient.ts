@@ -20,12 +20,12 @@ type PuterClient = {
   };
 };
 
-function getPuterClient(): PuterClient | null {
+export function getPuterClient(): PuterClient | null {
   if (typeof window === "undefined") return null;
   return (window as unknown as { puter?: PuterClient }).puter ?? null;
 }
 
-async function ensurePuterLoaded(): Promise<PuterClient> {
+export async function ensurePuterLoaded(): Promise<PuterClient> {
   const existing = getPuterClient();
   if (existing?.ai?.txt2img) return existing;
 

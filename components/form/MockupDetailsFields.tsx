@@ -12,6 +12,7 @@ interface MockupDetailsFieldsProps {
   onProductInfoChange: (value: string) => void;
   onAspectRatioChange: (value: AspectRatio) => void;
   onCustomPromptChange: (value: string) => void;
+  onGenerateClick: () => void;
 }
 
 export function MockupDetailsFields({
@@ -25,6 +26,7 @@ export function MockupDetailsFields({
   onProductInfoChange,
   onAspectRatioChange,
   onCustomPromptChange,
+  onGenerateClick,
 }: MockupDetailsFieldsProps) {
   return (
     <div className="space-y-4">
@@ -44,7 +46,7 @@ export function MockupDetailsFields({
 
       <AspectRatioSelector value={aspectRatio} onChange={onAspectRatioChange} />
 
-        {isEditPromptOpen ? (
+      {isEditPromptOpen ? (
         <div className="space-y-2 w-full">
           <label htmlFor="customPrompt" className="text-sm font-medium">
             Custom Prompt
@@ -61,7 +63,8 @@ export function MockupDetailsFields({
       ) : null}
       <div className="flex">
         <button
-          type="submit"
+          type="button"
+          onClick={onGenerateClick}
           disabled={!isFormValid || isSubmitting}
           className="inline-flex h-11 items-center justify-center rounded-xl bg-zinc-900 px-4 text-sm font-medium text-white transition hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:w-auto"
         >
