@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { generateMockupWithGemini } from "@/lib/gemini";
 import { buildProductMockupPrompt } from "@/lib/promptBuilder";
 
 interface GenerateApiSuccessResponse {
@@ -115,18 +114,18 @@ export async function POST(
     });
     console.log("[generate] Prompt built");
 
-    const gemini = await generateMockupWithGemini(prompt, productImageFile);
-    console.log("[generate] Gemini generation complete", {
-      hasImage: Boolean(gemini.imageBase64),
-      mimeType: gemini.mimeType,
-    });
+    console.log("[generate] Prompt ready for client generation");
 
     return NextResponse.json({
       success: true,
       message: "Request received successfully",
       data: {
         prompt,
-        gemini,
+        gemini: {
+          text: "Mockup generated successfully.",
+          imageBase64: null,
+          mimeType: null,
+        },
         brandName,
         productInfo,
         industry,

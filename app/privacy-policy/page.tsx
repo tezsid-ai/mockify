@@ -39,9 +39,10 @@ export default function PrivacyPolicyPage() {
           How We Use Your Information
         </h2>
         <p className="max-w-prose text-base leading-relaxed text-foreground/80">
-          We use your inputs to build a generation prompt, send it to the AI
-          model, and return mockup results to you. The uploaded product image is
-          used solely to create the mockup output you requested.
+          We use your inputs to build a generation prompt, send it to our AI
+          providers (including Puter.js in the browser), and return mockup
+          results to you. The uploaded product image is used solely to create
+          the mockup output you requested.
         </p>
       </article>
 
@@ -62,8 +63,9 @@ export default function PrivacyPolicyPage() {
           Third-Party Services
         </h2>
         <p className="max-w-prose text-base leading-relaxed text-foreground/80">
-          We use the Google Gemini API to process prompts and images for AI
-          generation.
+          We use Puter.js to generate images in the browser. When enabled, we
+          may also use the Google Gemini API to process prompts and images for
+          AI generation.
         </p>
       </article>
 
@@ -81,8 +83,8 @@ export default function PrivacyPolicyPage() {
           Data Sharing
         </h2>
         <p className="max-w-prose text-base leading-relaxed text-foreground/80">
-          We share your submitted inputs with Google Gemini solely to generate
-          mockups. We do not sell your personal data or share it with
+          We share your submitted inputs with our AI providers solely to
+          generate mockups. We do not sell your personal data or share it with
           advertisers, partners, or other third parties for marketing purposes.
         </p>
       </article>

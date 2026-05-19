@@ -44,18 +44,8 @@ export function MockupDetailsFields({
 
       <AspectRatioSelector value={aspectRatio} onChange={onAspectRatioChange} />
 
-      <div className="flex">
-        <button
-          type="submit"
-          disabled={!isFormValid || isSubmitting}
-          className="inline-flex h-11 w-full items-center justify-center rounded-xl bg-zinc-900 px-4 text-sm font-medium text-white transition hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:w-auto"
-        >
-          {isSubmitting ? "Generating..." : "Generate"}
-        </button>
-      </div>
-
-      {isEditPromptOpen ? (
-        <div className="space-y-2">
+        {isEditPromptOpen ? (
+        <div className="space-y-2 w-full">
           <label htmlFor="customPrompt" className="text-sm font-medium">
             Custom Prompt
           </label>
@@ -69,6 +59,31 @@ export function MockupDetailsFields({
           />
         </div>
       ) : null}
+      <div className="flex">
+        <button
+          type="submit"
+          disabled={!isFormValid || isSubmitting}
+          className="inline-flex h-11 items-center justify-center rounded-xl bg-zinc-900 px-4 text-sm font-medium text-white transition hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:w-auto"
+        >
+          {isSubmitting ? "Generating..." : "Generate"}
+        </button>
+      </div>
+
+      {/* {isEditPromptOpen ? (
+        <div className="space-y-2">
+          <label htmlFor="customPrompt" className="text-sm font-medium">
+            Custom Prompt
+          </label>
+          <textarea
+            id="customPrompt"
+            rows={4}
+            value={customPrompt}
+            onChange={(event) => onCustomPromptChange(event.target.value)}
+            placeholder="Add your preferred styling or custom instructions..."
+            className="w-full rounded-xl border border-zinc-300 bg-transparent px-3 py-2 text-sm outline-none focus:border-zinc-500 dark:border-zinc-700"
+          />
+        </div>
+      ) : null} */}
 
       {submitError ? (
         <p className="text-sm text-red-600">{submitError}</p>

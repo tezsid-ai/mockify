@@ -52,9 +52,10 @@ export default function DisclaimerPage() {
           Third-Party AI Services
         </h2>
         <p className="max-w-prose text-base leading-relaxed text-foreground/80">
-          This tool uses the Google Gemini API to process prompts and product
-          images for generation. We do not control or guarantee the behavior,
-          accuracy, or availability of that third-party service.
+          This tool uses Puter.js to generate images in the browser and may use
+          the Google Gemini API when enabled for generation. We do not control
+          or guarantee the behavior, accuracy, or availability of these
+          third-party services.
         </p>
       </article>
 
