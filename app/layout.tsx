@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import { CinematicBackground } from "@/components/ui/CinematicBackground";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,7 +30,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <header className="w-full bg-foreground/5">
+        <CinematicBackground />
+
+        <header className="relative z-10 w-full bg-foreground/5">
           <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-3 text-sm md:px-10">
             <Link href="/" className="font-semibold text-foreground text-xl">
               Mockify
@@ -40,9 +43,11 @@ export default function RootLayout({
           </div>
         </header>
 
-        {children}
+        <div className="relative z-10 flex flex-1 flex-col">
+          {children}
+        </div>
 
-        <footer className="mt-auto w-full bg-foreground/5">
+        <footer className="relative z-10 mt-auto w-full bg-foreground/5">
           <div className="mx-auto flex w-full max-w-5xl flex-col items-start justify-between gap-3 px-6 py-4 text-sm text-foreground/70 md:flex-row md:items-center md:px-10">
             <span className="font-medium text-foreground">Mockify · Built by Tezsid Designs Pvt Ltd.</span>
             <div className="flex items-center gap-4">
